@@ -22,10 +22,9 @@ function setup() {
 
 function draw() {
   //the speed varies according to the rotation and its maximum is 2
-  if (pongo == 0) {
-    vely = constrain(rotationX, -1.5, 1.5);
-    velx = constrain(rotationY, -1.5, 1.5);
-  }
+  vely = constrain(rotationX, -1.5, 1.5);
+  velx = constrain(rotationY, -1.5, 1.5);
+
   //add the speed to the current position of the balls
   x += velx;
   y += vely;
