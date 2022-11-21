@@ -25,8 +25,8 @@ function setup() {
 function draw() {
   //the speed varies according to the rotation and its maximum is 2
   if (pongo == 0) {
-    vely = constrain(rotationX, -2, 2);
-    velx = constrain(rotationY, -2, 2);
+    vely = constrain(rotationX, -1.5, 1.5);
+    velx = constrain(rotationY, -1.5, 1.5);
   }
   //add the speed to the current position of the balls
   x += velx;
@@ -103,15 +103,4 @@ function touchEnded(event) {
 function deviceShaken() {
   background(random(colors1));
   c = (random(colors2));
-}
-
-function mousePressed() {
-  pongo = 2;
-  velx = 0;
-  vely = 0;
-  background("green");
-}
-
-function mouseReleased() {
-  pongo = 0;
 }
