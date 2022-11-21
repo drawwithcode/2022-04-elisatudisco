@@ -74,6 +74,12 @@ function draw() {
   textAlign(CENTER);
   textSize(40);
   text(myText, width / 2, 80);
+
+  for (let i = 0; i < touches.length; i++) {
+    const touch = touches[i];
+    pongo = 2;
+    background("green");
+  }
 }
 
 // called at the beginning of a touch event
