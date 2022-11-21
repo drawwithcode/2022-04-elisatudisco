@@ -24,7 +24,7 @@ function setup() {
 
 function draw() {
   //the speed varies according to the rotation and its maximum is 2
-  if (pongo = 0) {
+  if (pongo == 0) {
     vely = constrain(rotationX, -2, 2);
     velx = constrain(rotationY, -2, 2);
   }
@@ -113,5 +113,4 @@ function mousePressed() {
 
 function mouseReleased() {
   pongo = 0;
-
 }
