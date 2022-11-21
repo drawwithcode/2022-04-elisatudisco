@@ -6,7 +6,7 @@ let colors2 = ["#ff4040", "#ff423d", "#ff453a", "#ff4838", "#fe4b35", "#fe4e33",
 let lines = []; //empty array used to keep track of lines
 
 //coordinates of the balls that create the snowflake
-let x = 100; 
+let x = 100;
 let y = 100;
 //initial speed
 let velx = 0;
@@ -102,4 +102,10 @@ function deviceShaken() {
   c = (random(colors2));
 }
 
+function mousePressed() {
+  noLoop();
+}
 
+function mouseReleased() {
+  loop();
+}
