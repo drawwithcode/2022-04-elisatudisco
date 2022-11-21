@@ -109,6 +109,7 @@ function mousePressed() {
   pongo = 2;
   velx = 0;
   vely = 0;
+  background("green");
 }
 
 function mouseReleased() {
