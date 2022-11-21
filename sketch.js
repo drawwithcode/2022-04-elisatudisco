@@ -13,6 +13,8 @@ let velx = 0;
 let vely = 0;
 let c; //color
 
+let pongo = 0;
+
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
@@ -22,9 +24,10 @@ function setup() {
 
 function draw() {
   //the speed varies according to the rotation and its maximum is 2
-  vely = constrain(rotationX, -2, 2);
-  velx = constrain(rotationY, -2, 2);
-
+  if (pongo = 0) {
+    vely = constrain(rotationX, -2, 2);
+    velx = constrain(rotationY, -2, 2);
+  }
   //add the speed to the current position of the balls
   x += velx;
   y += vely;
@@ -103,10 +106,12 @@ function deviceShaken() {
 }
 
 function mousePressed() {
+  pongo = 2;
   velx = 0;
   vely = 0;
 }
 
 function mouseReleased() {
-  loop();
+  pongo = 0;
+
 }
