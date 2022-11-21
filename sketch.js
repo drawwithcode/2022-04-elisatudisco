@@ -103,7 +103,8 @@ function deviceShaken() {
 }
 
 function mousePressed() {
-  noLoop();
+  velx = 0;
+  vely = 0;
 }
 
 function mouseReleased() {
