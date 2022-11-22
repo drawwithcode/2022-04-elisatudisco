@@ -13,11 +13,22 @@ let velx = 0;
 let vely = 0;
 let c; //color
 
+function preload() {
+  song = loadSound('/assets/snowflake.mp3') //background music
+}
+
 function setup() {
+  backgroundMusic();
   cnv = createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES);
   background(0); //default background (black)
   c = color("white"); //default balls' color (white)
+}
+
+function backgroundMusic() {
+  song.play(); // starts playing
+  song.setVolume(0.5); // change the volume of the sound file
+  userStartAudio(); // enable audio
 }
 
 function draw() {
