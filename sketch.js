@@ -14,7 +14,7 @@ let vely = 0;
 let c; //color
 
 function preload() {
-  song = loadSound('/assets/snowflake.mp3') //background music
+  song = loadSound('assets/snowflake.mp3') //background music
 }
 
 function setup() {
